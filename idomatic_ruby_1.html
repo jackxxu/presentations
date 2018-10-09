@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Idiomatic Ruby</h1>
+					<h2>Enumerable</h2>
+				</section>
+				<section>
+					<section>
+						<h2>what is Ruby?</h2>
+						<ul>
+							<li>object-oriented</li>
+							<li>open source</li>
+							<li>dynamic (:send)</li>
+							<li>focus on "making developer happy"</li>
+						</ul>
+					</section>
+					<section>
+						<h2>how?</h2>
+						<ul>
+							<li>community</li>
+							<li>metaprogramming</li>
+							<li>concise</li>
+							<li>idioms</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>What are the idioms?</h2>
+					<section>
+						A programming idiom or code idiom is expressing a special feature of a recurring construct in one or more programming languages. Developers recognize programming idioms by associating and giving meaning to one or more code fragments.
+						<br><br>
+						wikipedia
+					</section>
+					<section>
+						<p>just like English idioms...</p>
+						<p>e.g. at the end of the day</p>
+					</section>
+					<section>
+						<ul>
+							<li>common ways to program</li>
+							<li>best practices</li>
+							<li>shared patterns among developers</li>
+							<li>similar to Gof design patterns, but idioms are smaller</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Ruby idioms</h2>
+					<section>
+						<ul>
+							<li>class/object construction</li>
+							<li>duck typing</li>
+							<li>blocks, proc and lambda</li>
+							<li>Enumerable</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Enumerable</h2>
+					<section>
+						<p>each</p>
+					</section>
+					<section>
+						<p>each_with_index</p>
+					</section>
+					<section>
+						<p>map (collect)</p>
+					</section>
+					<section>
+						<p>select</p>
+					</section>
+					<section>
+						<p>flatten</p>
+					</section>
+					<section>
+						<p>flat_map</p>
+					</section>
+					<section>
+						<p>find</p>
+					</section>
+					<section>
+						<p>all?/any?</p>
+					</section>
+					<section>
+						<p>sort</p>
+					</section>
+					<section>
+						<p>group_by</p>
+					</section>
+					<section>
+						<p>reduce</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
